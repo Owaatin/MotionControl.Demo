@@ -1,0 +1,204 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Git\\MotionControl.Demo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|e:\\git\\motioncontrol.demo\\motioncontrol.demo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|solutionrelative:motioncontrol.demo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|e:\\git\\motioncontrol.demo\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|e:\\git\\motioncontrol.demo\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|e:\\git\\motioncontrol.demo\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|solutionrelative:viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|e:\\git\\motioncontrol.demo\\services\\trajectory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|solutionrelative:services\\trajectory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|e:\\git\\motioncontrol.demo\\models\\axisstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|solutionrelative:models\\axisstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|e:\\git\\motioncontrol.demo\\drivers\\nativemotioncard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|solutionrelative:drivers\\nativemotioncard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|e:\\git\\motioncontrol.demo\\drivers\\mockmotioncard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|solutionrelative:drivers\\mockmotioncard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|e:\\git\\motioncontrol.demo\\drivers\\imotioncard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|solutionrelative:drivers\\imotioncard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|e:\\git\\motioncontrol.demo\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|e:\\git\\motioncontrol.demo\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7224BE4-EF96-2014-519B-88D253ABE5D0}|MotionControl.Demo.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Trajectory.cs",
+              "DocumentMoniker": "E:\\Git\\MotionControl.Demo\\Services\\Trajectory.cs",
+              "RelativeDocumentMoniker": "Services\\Trajectory.cs",
+              "ToolTip": "E:\\Git\\MotionControl.Demo\\Services\\Trajectory.cs",
+              "RelativeToolTip": "Services\\Trajectory.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T07:35:00.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NativeMotionCard.cs",
+              "DocumentMoniker": "E:\\Git\\MotionControl.Demo\\Drivers\\NativeMotionCard.cs",
+              "RelativeDocumentMoniker": "Drivers\\NativeMotionCard.cs",
+              "ToolTip": "E:\\Git\\MotionControl.Demo\\Drivers\\NativeMotionCard.cs",
+              "RelativeToolTip": "Drivers\\NativeMotionCard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T07:33:31.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "E:\\Git\\MotionControl.Demo\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainViewModel.cs",
+              "ToolTip": "E:\\Git\\MotionControl.Demo\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAwwA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T07:35:21.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IMotionCard.cs",
+              "DocumentMoniker": "E:\\Git\\MotionControl.Demo\\Drivers\\IMotionCard.cs",
+              "RelativeDocumentMoniker": "Drivers\\IMotionCard.cs",
+              "ToolTip": "E:\\Git\\MotionControl.Demo\\Drivers\\IMotionCard.cs",
+              "RelativeToolTip": "Drivers\\IMotionCard.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA0wCUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T07:34:15.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AxisState.cs",
+              "DocumentMoniker": "E:\\Git\\MotionControl.Demo\\Models\\AxisState.cs",
+              "RelativeDocumentMoniker": "Models\\AxisState.cs",
+              "ToolTip": "E:\\Git\\MotionControl.Demo\\Models\\AxisState.cs",
+              "RelativeToolTip": "Models\\AxisState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T07:33:59.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\Git\\MotionControl.Demo\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "E:\\Git\\MotionControl.Demo\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T07:28:51.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\Git\\MotionControl.Demo\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "E:\\Git\\MotionControl.Demo\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-09T07:26:07.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml",
+              "DocumentMoniker": "E:\\Git\\MotionControl.Demo\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "E:\\Git\\MotionControl.Demo\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-09T07:25:46.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MotionControl.Demo.csproj",
+              "DocumentMoniker": "E:\\Git\\MotionControl.Demo\\MotionControl.Demo.csproj",
+              "RelativeDocumentMoniker": "MotionControl.Demo.csproj",
+              "ToolTip": "E:\\Git\\MotionControl.Demo\\MotionControl.Demo.csproj",
+              "RelativeToolTip": "MotionControl.Demo.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-09T07:25:33.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MockMotionCard.cs",
+              "DocumentMoniker": "E:\\Git\\MotionControl.Demo\\Drivers\\MockMotionCard.cs",
+              "RelativeDocumentMoniker": "Drivers\\MockMotionCard.cs",
+              "ToolTip": "E:\\Git\\MotionControl.Demo\\Drivers\\MockMotionCard.cs",
+              "RelativeToolTip": "Drivers\\MockMotionCard.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAYwGgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T07:46:16.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "E:\\Git\\MotionControl.Demo\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "E:\\Git\\MotionControl.Demo\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T07:25:54.183Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

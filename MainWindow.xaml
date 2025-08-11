@@ -1,0 +1,124 @@
+﻿<Window x:Class="MotionControl.Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Motion Control Demo (Single Axis)"
+        Width="1292" Height="640"
+        WindowStartupLocation="CenterScreen"
+        SnapsToDevicePixels="True"
+        UseLayoutRounding="True">
+    <!-- 整体可滚动，防止小屏/DPI 放大时被裁剪 -->
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="12" x:Name="RootGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- 顶部工具区：WrapPanel 可自动换行 -->
+            <WrapPanel ItemHeight="32" Margin="0,0,0,8">
+                <TextBlock Text="Adapter:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+                <ComboBox Width="180" SelectedItem="{Binding SelectedAdapter}" Margin="0,0,12,0">
+                    <ComboBoxItem Content="MockCard"/>
+                    <ComboBoxItem Content="NativeCard (stub)"/>
+                </ComboBox>
+
+                <Button Content="{Binding ConnectButtonText}" Command="{Binding ToggleConnectCommand}" Padding="12,6" Margin="0,0,8,0"/>
+                <Button Content="Servo ON" Command="{Binding ServoOnCommand}" Padding="12,6" Margin="0,0,8,0"/>
+                <Button Content="Servo OFF" Command="{Binding ServoOffCommand}" Padding="12,6" Margin="0,0,12,0"/>
+
+                <Button Content="Home" Command="{Binding HomeCommand}" Margin="0,0,8,0"/>
+                <TextBlock Text="JogVel:" VerticalAlignment="Center" Margin="0,0,4,0"/>
+                <TextBox Width="90" Text="{Binding JogVelocity}" Margin="0,0,6,0"/>
+                <Button Content="Jog -" Command="{Binding JogNegativeCommand}" Margin="0,0,8,0"/>
+                <Button Content="Jog 停" Command="{Binding JogStopCommand}" Margin="0,0,8,0"/>
+                <Button Content="Jog +" Command="{Binding JogPositiveCommand}" Margin="0,0,8,0"/>
+
+                <TextBlock Text="当前位置:" VerticalAlignment="Center" Margin="0,0,4,0"/>
+                <TextBlock Text="{Binding Position, StringFormat=F3}" FontWeight="Bold" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding Status}" Margin="12,0,0,0" VerticalAlignment="Center"/>
+            </WrapPanel>
+
+            <!-- 中部两列 -->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.8*"/>
+                    <ColumnDefinition Width="1.2*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- 左：轨迹规划 -->
+                <GroupBox Header="点到点 (Trapezoid Profile Planner)" Margin="0,0,8,0">
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- 参数行 -->
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="120"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Text="目标位置:" VerticalAlignment="Center" Grid.Column="0" Margin="0,0,6,0"/>
+                            <TextBox Text="{Binding TargetPosition}" Grid.Column="1" Margin="0,0,12,0" MinWidth="100"/>
+
+                            <TextBlock Text="Vmax:" VerticalAlignment="Center" Grid.Column="2" Margin="0,0,6,0"/>
+                            <TextBox Text="{Binding Vmax}" Grid.Column="3" Margin="0,0,12,0" MinWidth="100"/>
+
+                            <TextBlock Text="Acc:" VerticalAlignment="Center" Grid.Column="4" Margin="0,0,6,0"/>
+                            <TextBox Text="{Binding Acc}" Grid.Column="5" Margin="0,0,12,0" MinWidth="100"/>
+
+                            <TextBlock Text="Dec:" VerticalAlignment="Center" Grid.Column="6" Margin="0,0,6,0"/>
+                            <TextBox Text="{Binding Dec}" Grid.Column="7" MinWidth="100"/>
+                        </Grid>
+
+                        <!-- 执行行 -->
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,8,0,8">
+                            <TextBlock Text="采样周期(ms):" VerticalAlignment="Center"/>
+                            <TextBox Text="{Binding SampleMs}" Width="100" Margin="6,0,12,0"/>
+                            <Button Content="规划+执行" Command="{Binding PlanAndExecuteCommand}" Padding="12,6" Margin="0,0,8,0"/>
+                            <Button Content="停止" Command="{Binding StopCommand}" Padding="12,6" Margin="0,0,8,0" />
+                            <Button Content="急停" Command="{Binding EstopCommand}" Padding="12,6"/>
+                        </StackPanel>
+
+                        <!-- 计划摘要，可滚动 -->
+                        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+                            <TextBox Text="{Binding PlanSummary}" IsReadOnly="True" TextWrapping="Wrap" AcceptsReturn="True" MinHeight="160"/>
+                        </ScrollViewer>
+                    </Grid>
+                </GroupBox>
+
+                <!-- 右：软限位与状态 -->
+                <GroupBox Header="软限位 &amp; 状态" Grid.Column="1">
+                    <StackPanel Margin="10">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Min:" VerticalAlignment="Center"/>
+                            <TextBox Text="{Binding SoftLimitMin}" Width="100" Margin="6,0,12,0"/>
+                            <TextBlock Text="Max:" VerticalAlignment="Center"/>
+                            <TextBox Text="{Binding SoftLimitMax}" Width="100" Margin="6,0,12,0"/>
+                            <Button Content="应用软限位" Command="{Binding ApplySoftLimitCommand}"/>
+                        </StackPanel>
+
+                        <TextBlock Text="{Binding AxisStatus}" Margin="0,8,0,0" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </GroupBox>
+            </Grid>
+
+            <!-- 底部状态栏 -->
+            <StatusBar Grid.Row="2" Margin="0,8,0,0">
+                <StatusBarItem>
+                    <TextBlock Text="说明：MockCard 无需硬件；NativeCard 需替换 SDK 函数实现"/>
+                </StatusBarItem>
+            </StatusBar>
+        </Grid>
+    </ScrollViewer>
+</Window>
